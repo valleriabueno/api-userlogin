@@ -1,0 +1,37 @@
+{
+  "name": "soulshopuser",
+  "version": "1.0.0",
+  "description": "Autenticação de usuário via Firebase e MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valleriabueno/soulshopuser.git"
+  },
+  "keywords": [
+    "Firebase",
+    "MongoDB"
+  ],
+  "author": "Valéria Bueno do Valle",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-mongodb-session": "^3.1.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "bugs": {
+    "url": "https://github.com/valleriabueno/soulshopuser/issues"
+  },
+  "homepage": "https://github.com/valleriabueno/soulshopuser#readme"
+}
