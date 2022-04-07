@@ -19,7 +19,7 @@ Para melhor visualização da usabilidade da API, foram desenvolvidos telas de c
 
 ## Screenshots
 
-![API User Login](https://github.com/valleriabueno/imagens/blob/main/api-userlogin/view-login.png)
+[![App Screenshot](https://github.com/valleriabueno/imagens/blob/main/api-userlogin/view-login.png)](https://github.com/valleriabueno/imagens/blob/main/api-userlogin/view-login-gif.gif)
 
 
 ## Autor
