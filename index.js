@@ -14,6 +14,7 @@ const store = new MongoDBStore({
 
 const app = express();
 
+app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 //Middleware de cookies - irá armazenar o id (com os dados do usuário logado) que chama a coleção do MongoDB, no navegador
 app.use(
