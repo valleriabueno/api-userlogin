@@ -1,7 +1,7 @@
 {
-  "name": "soulshopuser",
+  "name": "api-userlogin",
   "version": "1.0.0",
-  "description": "Autenticação de usuário via Firebase e MongoDB",
+  "description": "Autenticação de usuário via BCrypt e MongoDB",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,11 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/valleriabueno/soulshopuser.git"
+    "url": "git+https://github.com/valleriabueno/api-userlogin.git"
   },
   "keywords": [
-    "Firebase",
-    "MongoDB"
+    "Express",
+    "MongoDB",
+    "Handlebars"
   ],
   "author": "Valéria Bueno do Valle",
   "license": "MIT",
@@ -31,7 +32,7 @@
     "nodemon": "^2.0.15"
   },
   "bugs": {
-    "url": "https://github.com/valleriabueno/soulshopuser/issues"
+    "url": "https://github.com/valleriabueno/api-userlogin/issues"
   },
-  "homepage": "https://github.com/valleriabueno/soulshopuser#readme"
+  "homepage": "https://github.com/valleriabueno/api-userlogin#readme"
 }
