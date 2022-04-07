@@ -1,24 +1,80 @@
-<div class="m-1">
-  <h1>Login</h1>
-  <hr />
-  {{> error}}
-  <form action="/login" method="POST">
-    <div class="mb-3">
-      <input
-        type="email"
-        class="form-control"
-        name="email"
-        placeholder="Email"
-      />
+<div class="contorno">
+  <div class="card-animado">
+    <svg viewBox="0 0 500 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+      <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color: rgb(254, 253, 252);"></stop>
+          <stop offset="100%" style="stop-color: rgb(71, 49, 70);"></stop>
+        </linearGradient>
+      </defs>
+      <path fill="url(#gradient)">
+        <animate attributeName="d"
+          dur="10000ms"
+          repeatCount="indefinite"
+
+          values="
+          M443,344Q400,438,305.5,429.5Q211,421,145,376.5Q79,332,89.5,255Q100,178,152.5,115Q205,52,283,81.5Q361,111,423.5,180.5Q486,250,443,344Z;
+          
+          M432.5,322.5Q366,395,288.5,408.5Q211,422,152,374Q93,326,79,243.5Q65,161,134.5,104Q204,47,278,84Q352,121,425.5,185.5Q499,250,432.5,322.5Z;
+
+          M402,322.5Q366,395,280.5,443Q195,491,140,410Q85,329,95,254.5Q105,180,159,133Q213,86,280,107Q347,128,392.5,189Q438,250,402,322.5Z;
+          
+          M401.5,328Q374,406,292.5,413.5Q211,421,134.5,381.5Q58,342,50.5,246.5Q43,151,122,92.5Q201,34,296,53.5Q391,73,410,161.5Q429,250,401.5,328Z;
+
+          M399,331Q379,412,292,430Q205,448,125,398.5Q45,349,69.5,262Q94,175,146,98.5Q198,22,288.5,55Q379,88,399,169Q419,250,399,331Z;
+          
+          M450,346.5Q404,443,306.5,437.5Q209,432,121.5,393Q34,354,66,265.5Q98,177,146.5,93.5Q195,10,283.5,53.5Q372,97,434,173.5Q496,250,450,346.5Z;
+
+          M443,344Q400,438,305.5,429.5Q211,421,145,376.5Q79,332,89.5,255Q100,178,152.5,115Q205,52,283,81.5Q361,111,423.5,180.5Q486,250,443,344Z
+          ">
+        </animate>
+      </path>
+    </svg>
+  </div>
+  <div class="conteudo">
+    <div class="img">
+      <i class="bi bi-person-fill"></i>
     </div>
-    <div class="mb-3">
-      <input
-        type="password"
-        class="form-control"
-        name="password"
-        placeholder="Senha"
-      />
+    <div class="card-transparente"></div>
+    <div class="dados">
+      <div class="form">
+        <h1>Login</h1>
+        {{> error}}
+        <form id="form-login" action="/login" method="POST">
+          <div class="usuario">
+            <span class="usuario-icone"><i class="bi bi-person-fill icone-input"></i></span>
+            <input
+              id="usuario-campo"
+              type="email"
+              class="form-control"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="senha">
+            <span class="senha-icone"><i class="bi bi-shield-lock-fill icone-input"></i></span>
+            <input
+              id="senha-campo"
+              type="password"
+              class="form-control"
+              name="password"
+              placeholder="Senha"
+              required
+            />
+          </div>
+          <div class="recuperar"><a href="#">Esqueceu a senha?</a></div>
+          <div class="rodape">
+            <div class="btn-login">
+              <button class="btn-1" type="submit">LOGIN</button>
+            </div>
+            <div class="cadastro">
+              <p>Não tem uma conta?</p>
+              <p><a href="/signup">Cadastre-se!</a></p>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-    <button class="btn btn-primary">Login</button>
-  </form>
+  </div>
 </div>
